@@ -1,46 +1,78 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="ヲタクに優しいギャル"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「ヲタクに優しいギャル」[l][r]
 
-メロスは激怒した。[l][r]
+ヲタクは復讐に燃えていた。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+必ず、かつてヲタクをいじめたギャルをこらしめなければならないと決意した。[l][r]
 
-(中略)[l][r]
+どうやって仕返ししようかな...[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_lunch] →ご飯に誘う [endlink][r]
+[link target=*tag_stalking] →ストーカーする [endlink][r]
 [s]
 
-*tag_sleep
+*tag_lunch
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+ギャル「ヲタク君、久しぶり！元気だった？」[l][r]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+[link target=*tag_eat] →楽しくご飯を食べる [endlink][r]
+[link target=*tag_buttle] →ケンカする [endlink][r]
+[s]
+
+*tag_eat
+
+[cm]
+
+ギャル「クチャクチャ音立てながら食べんなよ！キモいんだけど」
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_buttle
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+ギャル「急に何？キモいんだけど」
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_stalking
+
+[cm]
+
+ギャル「うわ！こんなところで何してんの？」[l][r]
+
+[link target=*tag_hug] →そっと抱きしめる [endlink][r]
+[link target=*tag_normal] →偶然を装う [endlink][r]
+[s]
+
+*tag_hug
+
+[cm]
+
+ギャル「何してんのよ！キモいんだけど」
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_normal
+
+[cm]
+
+ギャル「普通に近寄らないでくんない？キモいんだけど」
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
